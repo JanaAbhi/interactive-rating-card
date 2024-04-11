@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 14px;
+  background-color: var(--VeryDarkBlue);
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+button {
+  font-family: inherit;
+}
+ul {
+  list-style-type: none;
+}
+p {
+  line-height: 1.7;
+}
+.container,
+.thank__state {
+  background-color: var(--DarkBlue);
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  max-width: 400px;
+}
+.container img {
+  background-color: hsl(211, 17%, 24%);
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+.container h1 {
+  color: #ffff;
+  margin: 2rem 0 1rem;
+}
+.container p {
+  color: var(--LightGrey);
+  margin-bottom: 1rem;
+}
+.container ul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.container ul li button {
+  width: 3rem;
+  height: 3rem;
+  background-color: hsl(211, 17%, 24%);
+  color: var(--White);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.container ul li :hover {
+  background-color: var(--Orange);
+}
+.container ul li :focus {
+  background-color: var(--MediumGrey);
+}
+.btn--submit {
+  background-color: var(--Orange);
+  font-size: 1rem;
+  color: var(--White);
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 40px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+.btn--submit:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.thank__state {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  text-align: center;
+}
+.thank__state img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+.thank__state p.selected--area{
+    display: inline-block;
+  color: var(--Orange);
+  background-color: hsl(211, 17%, 24%);
+  border-radius: 30px;
+  margin: 2rem auto 2rem;
+  padding: 0.3rem 1rem 0.2rem;
+}
+.thank__state h1{
+    color: var(--White);
+    margin-bottom: 1rem;
+}
+.thank__state p{
+    color: var(--LightGrey);
+}
+.hidden--state{
+    display: none;
+}
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: var(--White);
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
