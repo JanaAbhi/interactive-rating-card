@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Interactive rating component</title>
-  </head>
-  <body>
-    <!-- Rating state start -->
-    <main>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <!-- Rating state start -->
+  <main>
     <div class="container">
-      <img src="./images/icon-star.svg" alt="star"/>
+      <img src="./images/icon-star.svg" alt="star" />
       <h1>How did we do?</h1>
       <p>
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <ul>
-        <li><button class="btn--class">1</button></li>
-        <li><button class="btn--class">2</button></li>
-        <li><button class="btn--class">3</button></li>
-        <li><button class="btn--class">4</button></li>
-        <li><button class="btn--class">5</button></li>
-      </ul>
+      
+        <ul >
+          <li><button class="btn--class" value="1">1</button></li>
+          <li><button class="btn--class" value="2">2</button></li>
+          <li><button class="btn--class" value="3">3</button></li>
+          <li><button class="btn--class" value="4">4</button></li>
+          <li><button class="btn--class" value="5">5</button></li>
+        </ul>
+      
       <button class="btn--submit" id="submit">Submit</button>
     </div>
 
     <div class="thank__state hidden--state">
-      <img src="./images/illustration-thank-you.svg" alt="submit"/>
+      <img src="./images/illustration-thank-you.svg" alt="submit" />
       <p class="selected--area">
         You Selected <span id="rating"> </span> out of 5
       </p>
@@ -45,11 +48,11 @@
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/JanaAbhi" target="_blank">Janarthanan</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="https://github.com/JanaAbhi" target="_blank">Janarthanan</a>.
     </div>
     <script src="./action.js"></script>
   </main>
-  </body>
+</body>
+
 </html>
